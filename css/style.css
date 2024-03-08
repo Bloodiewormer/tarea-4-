@@ -1,0 +1,401 @@
+/********** Template CSS **********/
+:root {
+    --primary: #3CB815;
+    --secondary: #F65005;
+    --light: #F7F8FC;
+    --dark: #111111;
+}
+
+
+/*** Section Header ***/
+.section-header {
+    position: relative;
+    padding-top: 25px;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-header.text-start::before,
+.section-header.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+button.mt-3 {
+    background-color: #3CB815;
+}
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+}
+ 
+/*Primera parte*/
+.caja-grande {
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    margin-bottom: 20px; /* Espacio entre cajas */
+}
+
+.caja-intermedia {
+    display: flex;
+    flex-direction: row; /* Organizar elementos en una fila */
+    align-items: center; /* Centrar verticalmente el contenido */
+}
+
+.caja-verdurero {
+    flex: 1; /* Que la imagen ocupe todo el espacio disponible */
+}
+
+.caja-texto {
+    flex: 1; /* Que el texto ocupe todo el espacio disponible */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos adicionales para los elementos de texto */
+.titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto-principal {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.texto-info {
+    font-size: 18px; /* Ajustar el tamaño de fuente */
+    padding: 10px 20px; /* Agregar relleno alrededor del texto */
+    display: inline-block; /* Convertir en un elemento de bloque para aplicar anchura */
+    background-color: #3CB815; /* Color de fondo */
+    color: #f0f0f0; /* Color de texto */
+    text-decoration: none; /* Quitar subrayado por defecto */
+    border-radius: 25px; /* Agregar bordes redondeados */
+}
+
+img.verdurero {
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+/*Fin Primera parte*/
+div.caja-principal-caracteriza {
+    background-color: rgb(247, 248, 252);
+    height: 600px;
+}
+
+.section-header {
+    text-align: center; /* Centrar horizontalmente */
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Organizar en columna */
+    justify-content: center; /* Centrar verticalmente */
+    height: 150px; /* Ajusta la altura según sea necesario */
+    margin-bottom: 10px;
+}
+
+.section-header>p {
+    text-align: center;
+}
+
+div.contenedor-cajas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.caja-carac {
+    background-color: white;
+    height: 304px;
+    width: 360px;
+    text-align: center; /* Centrar horizontalmente */
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Organizar en columna */
+    justify-content: center; /* Centrar verticalmente */
+    margin-bottom: 10px;
+}
+
+.contenido-caja>h4 {
+    text-align: center;
+}
+
+.contenido-caja>img {
+    margin-bottom: 10px;
+}
+
+.info-carac {
+    color: #3CB815;
+    border: 2px solid #3CB815;
+    border-radius: 50px;
+    height: 60px;
+    width: 120px;
+    margin-top: 10px;
+    display: inline-block; /* Convertir en elemento de bloque */
+    text-align: center; /* Centrar el texto horizontalmente */
+    line-height: 60px; /* Ajustar la altura del texto verticalmente */
+    text-decoration: none; /* Quitar subrayado de enlace */
+    font-size: 14px;
+}
+
+.caja-acomoda-compo {
+    display: flex; /* Utilizar flexbox */
+    justify-content: space-between; /* Espacio entre las cajas */
+    width: 100%;
+}
+
+.caja-header,
+.caja-opciones {
+    flex: 1; /* Que ocupen el mismo espacio */
+    width: 50%;
+}
+
+
+.caja-opciones {
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Organizar elementos en columna */
+    justify-content: flex-end; /* Alinear elementos hacia abajo */
+    align-items: flex-end; /* Alinear elementos hacia la derecha */
+}
+
+.lista-opciones {
+    padding: 0; /* Quitar el relleno predeterminado */
+    list-style-type: none; /* Quitar los estilos de lista predeterminados */
+    display: flex;
+}
+
+.opcion {
+    margin-bottom: 10px; /* Espacio entre las opciones */
+    margin-right: 10px;
+    border: solid 2px #3CB815;
+    padding: 5px 5px;
+}
+
+.opcion>a {
+    color: #111111;
+}
+
+.opcion:hover {
+    background-color: #3CB815;
+}
+
+.opcion>a:hover {
+    color: white;
+}
+
+.caja-principal-productos {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos se ajusten automáticamente */
+    background-color: rgb(255, 247, 237);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caja-producto {
+    width: calc(33.33% - 20px); /* Ancho del contenedor del producto */
+    margin: 10px; /* Margen entre los productos */
+    background-color: white;
+}
+
+.caja-pequenna-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-foto-p {
+    margin-bottom: 10px; /* Espacio entre la imagen y el resto de la información */
+}
+
+.caja-opciones-compra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Espacio entre el precio y las opciones de compra */
+}
+
+.caja-opcion-compra {
+    margin: 0 5px; /* Espacio entre las opciones de compra */
+}
+
+.opcion-compra {
+    text-decoration: none;
+    color: black;
+}
+
+.opcion-compra:not(:last-child) {
+    border-right: 1px solid black; /* Línea entre las opciones de compra */
+    padding-right: 5px; /* Espacio adicional a la derecha de las opciones */
+}
+
+.precio-p {
+    display: block;
+    color: #3CB815;
+}
+
+a.descripcion-p {
+    color: #111111;
+}
+
+.opcion-compra1 {
+    padding-right: 16px;
+    border-right: solid gray 2px;
+}
+
+div.caja-opciones-compra {
+    border-top: solid 2px gray;
+}
+
+.caja-principal-visita {
+    width: 100%;
+    background-color: #3CB815;
+    height: 276px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caja-mediana {
+    display: flex;
+}
+
+.caja-texto-titulo {
+    display: block;
+    width: 65%;
+    margin-right: 10px;
+    padding: 40px 10px 40px 10px;
+}
+
+.titulo-finca {
+    font-size: 40px;
+    color: white;
+}
+
+.texto-finca {
+    color: white;
+}
+
+.titulo-finca {
+    color: white;
+}
+
+.caja-boton {
+    align-items: center;
+    width: 35%;
+    padding-top: 100px;
+    padding-left: 75px;
+}
+
+.boton-texto {
+    color: white;
+    font-size: 20px; /* Aumenta el tamaño del texto */
+    background-color: #F65005;
+    height: 75px; /* Aumenta la altura del botón */
+    width: 175px; /* Aumenta el ancho del botón */
+    border-radius: 50px; /* Agregar bordes redondeados */
+    text-decoration: none; /* Quitar subrayado por defecto */
+    display: flex; /* Utilizar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.caja-blog-principal {
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Centrar horizontalmente */
+}
+
+.section-header {
+    margin-bottom: 20px; /* Añadir margen inferior */
+}
+
+.lista-iamgenes-blog {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap; /* Permitir que las cajas se envuelvan cuando no quepan en una sola línea */
+}
+
+.caja-imagen {
+    margin: 0 10px 20px; /* Añadir margen a cada caja */
+    width: 258px;
+    background-color: rgb(221, 227, 227);
+    text-align: center; /* Centrar horizontalmente */
+}
+
+.imagen-blog {
+    width: 100%; /* Ajustar la imagen al ancho de la caja */
+    height: auto; /* Hacer que la altura se ajuste automáticamente */
+}
+
+.caja-descripcion {
+    padding: 10px;
+}
+
+.descripcion-imagen {
+    color: #111111;
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.footer {
+    background-color: #111111; /* Color de fondo */
+    padding: 50px 20px; /* Ajuste del espacio interno */
+    text-align: center; /* Centrar el texto */
+}
+
+.caja-foody {
+    display: flex; /* Utilizar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varios líneas si es necesario */
+}
+
+.caja-foody-cont,
+.caja-direccion {
+    flex: 1; /* Que cada caja ocupe el mismo espacio */
+    margin: 0 20px; /* Margen entre cada caja */
+}
+
+.titulo-direccion,
+.titulo-acess-rap {
+    margin-top: 0; /* Eliminar el margen superior del título */
+}
+
+.opcion-d {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.btn-link {
+    display: block;
+    color: gray;
+}
+
+.titulo-acess-rap {
+    color: white;
+}
+
+.titulo-direccion {
+    color: white;
+}
